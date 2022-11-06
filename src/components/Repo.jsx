@@ -56,7 +56,7 @@ return(
   <div className='container mt-5'>
   
  <div className="pages">
-   <Pagination items={currentPosts} loading={loading} />
+  <Pagination items={currentPosts} loading={loading} />
   <Pagining
         postsPerPage={postsPerPage}
         totalPosts={items.length}
