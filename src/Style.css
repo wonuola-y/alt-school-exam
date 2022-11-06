@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+.error-section {
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+  }
+  .alert{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img {
+    width: 25%;
+  }
+  .error{
+    margin: .6em;
+  }
+  .dark{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: #201610;
+    /* width: 40%; */
+  }
+  h1 {
+    color: #201610;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    /* margin: 1em 0; */
+    text-align: center;
+  }
+  .cards{
+    display: flex;
+    
+  }
+  /* .card{
+    width: 600px;
+  } */
+  .button {
+  border: 2px solid #5b3e2e;
+  background-color: transparent;
+  padding: .75em;
+  }
+  
+  img{
+    width: 40px;
+
+  }
+  a {
+    color: #201610;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #5b3e2e;
+  }
+  li:hover{
+    color: #5b3e2e;
+  }
+ 
+  .pages{
+    /* width: 30vw; */
+    height: 50vh;
+  }
+ .navs{
+  display: flex !important;
+  justify-items: space-around;
+padding: 1em;
+  align-items: center;
+  flex-direction: column;
+justify-content: flex-end;
+ }
+ .nav-display{
+  display: flex;
+ }
+ .menu{
+  display: flex;
+  justify-content: flex-end;
+ }
+ li{
+  list-style: none;
+
+ }
+ .card{
+  border: #201610 solid 1px;
+  width: 200px !important;
+  height: 100px !important ;
+ }
+ 
+ .logo{
+  font-weight: 700;
+  font-size: 40px;
+ }
+ section{
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9aca6;
+ }
+ .all{
+  height: 90vh;
+  width: 80vw;
+border-radius: 20px;
+background-color: #ffff;
+ }
+ .main{
+  display: flex;
+  height: 40vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+ }
+.link{
+ text-decoration: none;
+ color: #201610;
+}
+.pg{
+  width: 20%;
+color: #201610 !important;
+  margin: 1em;
+}
+
+.btn-primary{
+  background-color: transparent !important;
+
+}
+.pad{
+  border: #201610 1px solid;
+  border-radius: 10px;
+  display: flex;
+  width: 350px !important;
+  /* height:px; */
+  padding: 1em;
+  margin: 1em;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+ .pagination{
+  overflow: scroll;
+ }
+ .row{
+  width: 80%;
+  height: 90%;
+  overflow: scroll;
+ }
+.pag-link{
+  padding: .5em 1.5em !important;
+  border-radius: 1px !important;
+}
+.btn{
+  color: #201610 !important;
+  border:#201610 1px solid !important;
+  border-radius: 5px !important;
+
+}
+.btn:hover{
+  background-color: #f1968f !important;
+  color: white !important;
+  border: none !important;
+  
+}
+  @media screen and (min-width: 700px) {
+    /* .card{
+      width: 20% !important;
+      height: 30% !important ;
+     } */
+     .pad{
+      border: #201610 1px solid;
+      border-radius: 10px;
+      display: flex;
+      width: 21% !important;
+      padding: 1em;
+      margin: 1em;
+      justify-content: space-between;
+      flex-direction: column;
+      font-family: 'Josefin Sans', sans-serif;
+     }
+     .navs{
+      display: contents;
+     }
+    .title{
+      text-transform: capitalize;
+    }
+  
+     .navs{
+      display: flex !important;
+      justify-content: space-around;
+    padding: 1em;
+      align-items: center;
+      flex-direction: row;
+     }
+     .menu{
+      display: none;
+     }
+     h1 {
+      color: #201610;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 28px;
+      /* margin: 1em 0; */
+    }
+    ul{
+      margin: 0;
+    }
+  }
