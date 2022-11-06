@@ -12,6 +12,11 @@ const Pagining = ({ postsPerPage, totalPosts, paginate }) => {
   }
 
   return (
+    <>
+    <Helmet>
+        <title>Repositories</title>
+        <meta name=" Repo description" content=":List of Repositories"/>
+      </Helmet>
     <nav>
       <ul className='pagination'>
         {pageNumbers.map(number => (
@@ -23,6 +28,7 @@ const Pagining = ({ postsPerPage, totalPosts, paginate }) => {
         ))}
       </ul>
     </nav>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 
 
@@ -6,7 +7,12 @@ function Navbar() {
 
   
   return (
+    
     <div>
+      <Helmet>
+        <title>Navbar</title>
+        <meta name="description" content="Navbar tag"/>
+      </Helmet>
       <div className="menu">
         {" "}
         
