@@ -201,7 +201,7 @@ color: #201610 !important;
       text-transform: capitalize;
     }
   .row, .pagination{
-    overflow: scroll;
+    overflow: visible;
     display: flex;
   }
 
@@ -209,6 +209,7 @@ color: #201610 !important;
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin: 0 !important;
   }
      .navs{
       display: flex !important;
