@@ -46,12 +46,15 @@ function App() {
           <Route path="/NavList" element={<Navbar  />} />
           <Route path="*" element={<Error />} />
           <Route path="/" element={<Check />} />
-           <Route path="/Repo" element={<Repo />} />
+           <Route path="/Repo/*" element={<Repo />} >
+           <Route path="/Api" element={<Api />}/>
+           </Route>
+           
+           
           <Route path="/Pagination" element={<Pagination />}>
-         
-          <Route path="/Pagination2" element={<NestRoute />} />
-          </Route>
-          <Route path="/Api" element={<Api />}/>
+          
+                    </Route>
+          
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Paging" element={<Paging />} />
         </Routes>

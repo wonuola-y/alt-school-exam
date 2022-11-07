@@ -19,7 +19,7 @@ function Pagination({ items, loading }) {
                 <Card.Text>
                  Description: {item.description}
                 </Card.Text>
-               <Button variant="primary" onClick={()=>{}}>Go to repo  </Button>
+               <Button variant="primary" ><Link to="/Repo/Api">Details</Link> </Button>
             </Card.Body>
           </div>
     ))}

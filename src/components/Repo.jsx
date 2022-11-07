@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react"
 import Pagination from './Pagination';
-import Card from 'react-bootstrap/Card';
+import { Helmet } from "react-helmet-async";
 import Button from 'react-bootstrap/Button';
 
 const Pagining = ({ postsPerPage, totalPosts, paginate }) => {

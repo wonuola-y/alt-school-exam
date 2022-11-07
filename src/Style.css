@@ -189,7 +189,9 @@ color: #201610 !important;
     .title{
       text-transform: capitalize;
     }
-  
+  .row, .pagination{
+    overflow: visible;
+  }
      .navs{
       display: flex !important;
       justify-content: space-around;
