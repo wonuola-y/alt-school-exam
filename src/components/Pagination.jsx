@@ -2,6 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { Outlet } from 'react-router-dom'
+
+
 
 function Pagination({ items, loading }) {
   if (loading) {
@@ -18,9 +21,11 @@ function Pagination({ items, loading }) {
             </Card.Title>
             <Card.Text>Description: {item.description}</Card.Text>
             <Button variant="primary">
-              <Link to="/Pagination2">Details</Link>{" "}
+         <Link to="/Api">check</Link>
+           
             </Button>
           </Card.Body>
+          <Outlet />
         </div>
       ))}
     </div>

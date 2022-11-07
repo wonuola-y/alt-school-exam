@@ -12,7 +12,6 @@ import Paging from "./components/Paging";
 import Repo from "./components/Repo";
 import Navbar from "./components/Navbar";
 import Api from "./components/Api";
-
 function ErrorFallback({ error }) {
   return (
     <div role="alert" className="alert">
@@ -29,7 +28,7 @@ function Check() {
   return (
     <div className="main">
       {" "}
-      <h1> Welcome to My Protofolio</h1>
+      <h1> Welcome to My Github Portfolio</h1>
     </div>
   );
 }
@@ -45,11 +44,8 @@ function App() {
             <Route path="*" element={<Error />} />
             <Route path="/" element={<Check />} />
             <Route path="Repo" element={<Repo />} />
-
-            <Route path="nested" element={<Pagination />}>
-              <Route path="nested2" element={<Api />} />
-            </Route>
-
+            <Route path="nested" element={<Pagination />}/>
+            <Route path="Api" element={<Api />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="Paging" element={<Paging />} />
           </Routes>
