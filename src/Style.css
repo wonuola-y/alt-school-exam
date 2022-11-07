@@ -65,7 +65,7 @@
   }
  
   .pages{
-    /* width: 30vw; */
+    width: 80%;
     height: 50vh;
   }
  .navs{
@@ -100,6 +100,8 @@ justify-content: flex-end;
  section{
   font-family: 'Josefin Sans', sans-serif;
   height: 100vh;
+  /* width: 100vh; */
+  border: #5b3e2e 2px solid;
   display: flex !important;
   justify-content:center;
   align-items: center;
@@ -179,8 +181,10 @@ color: #201610 !important;
       width: 20% !important;
       height: 30% !important ;
      } */
+     section{
+      overflow: hidden;
+     }
      .pad{
-      border: #201610 1px solid;
       border-radius: 10px;
       display: flex;
       width: 21% !important;
@@ -197,10 +201,13 @@ color: #201610 !important;
       text-transform: capitalize;
     }
   .row, .pagination{
-    overflow: visible;
+    overflow: scroll;
     display: flex;
   }
+
   .row{
+    display: flex;
+    flex-direction: row;
     width: 100%;
   }
      .navs{

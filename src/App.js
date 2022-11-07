@@ -41,7 +41,7 @@ function App() {
           <Navbar />
           <BadComponent />
           <Routes>
-            <Route path="/Navbar" element={<Navbar />} />
+            <Route path="Navbar" element={<Navbar />} />
             <Route path="*" element={<Error />} />
             <Route path="/" element={<Check />} />
             <Route path="Repo" element={<Repo />} />
