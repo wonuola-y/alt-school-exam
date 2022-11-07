@@ -18,7 +18,7 @@ function Pagination({ items, loading }) {
             </Card.Title>
             <Card.Text>Description: {item.description}</Card.Text>
             <Button variant="primary">
-              <Link to="/Repo2">Details</Link>{" "}
+              <Link to="/Pagination2">Details</Link>{" "}
             </Button>
           </Card.Body>
         </div>

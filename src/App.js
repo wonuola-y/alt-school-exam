@@ -44,14 +44,14 @@ function App() {
             <Route path="/Navbar" element={<Navbar />} />
             <Route path="*" element={<Error />} />
             <Route path="/" element={<Check />} />
-            <Route path="/Repo" element={<Repo />}>
-              <Route path="/Repo2" element={<Api />} />
+            <Route path="Repo" element={<Repo />} />
+
+            <Route path="nested" element={<Pagination />}>
+              <Route path="nested2" element={<Api />} />
             </Route>
 
-            <Route path="/Pagination" element={<Pagination />}></Route>
-
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Paging" element={<Paging />} />
+            <Route path="Contact" element={<Contact />} />
+            <Route path="Paging" element={<Paging />} />
           </Routes>
         </ErrorBoundary>
       </div>
