@@ -1,5 +1,5 @@
 import React from "react";
-import './Style.css'
+import "./Style.css";
 import { ErrorBoundary } from "react-error-boundary";
 import { Link, Route, Routes } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
@@ -9,8 +9,7 @@ import Error from "./components/Error";
 import Pagination from "./components/Pagination";
 import Contact from "./components/Contact";
 import Paging from "./components/Paging";
-import Repo from './components/Repo'
-import NestRoute from './components/NestRoute';
+import Repo from "./components/Repo";
 import Navbar from "./components/Navbar";
 import Api from "./components/Api";
 
@@ -23,7 +22,6 @@ function ErrorFallback({ error }) {
         {error.message}
         <Link to="/">Return home</Link>
       </SyntaxHighlighter>
-    
     </div>
   );
 }
@@ -31,35 +29,32 @@ function Check() {
   return (
     <div className="main">
       {" "}
-      <h1> Welcome to The Users Hub</h1>
+      <h1> Welcome to My Protofolio</h1>
     </div>
   );
 }
 function App() {
   return (
     <section>
-    <div className="all">
-    <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <Navbar />
-        <BadComponent />
-        <Routes>
-          <Route path="/NavList" element={<Navbar  />} />
-          <Route path="*" element={<Error />} />
-          <Route path="/" element={<Check />} />
-           <Route path="/Repo/*" element={<Repo />} >
-           <Route path="/Api" element={<Api />}/>
-           </Route>
-           
-           
-          <Route path="/Pagination" element={<Pagination />}>
-          
-                    </Route>
-          
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Paging" element={<Paging />} />
-        </Routes>
-      </ErrorBoundary>
-    </div>
+      <div className="all">
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <Navbar />
+          <BadComponent />
+          <Routes>
+            <Route path="/Navbar" element={<Navbar />} />
+            <Route path="*" element={<Error />} />
+            <Route path="/" element={<Check />} />
+            <Route path="/Repo" element={<Repo />}>
+              <Route path="/Repo2" element={<Api />} />
+            </Route>
+
+            <Route path="/Pagination" element={<Pagination />}></Route>
+
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Paging" element={<Paging />} />
+          </Routes>
+        </ErrorBoundary>
+      </div>
     </section>
   );
 }

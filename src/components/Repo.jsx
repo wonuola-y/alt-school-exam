@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { useState } from "react"
-import Pagination from './Pagination';
+import { useState } from "react";
+import Pagination from "./Pagination";
 import { Helmet } from "react-helmet-async";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const Pagining = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -13,21 +13,25 @@ const Pagining = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Repositories</title>
-        <meta name=" Repo description" content=":List of Repositories"/>
+        <meta name=" Repo description" content=":List of Repositories" />
       </Helmet>
-    <nav>
-      <ul className='pagination'>
-        {pageNumbers.map(number => (
-          <div key={number} className='pg'>
-            <Button onClick={() => paginate(number)} href='#' className='pag-link '>
-              {number}
-            </Button>
-          </div>
-        ))}
-      </ul>
-    </nav>
+      <nav>
+        <ul className="pagination">
+          {pageNumbers.map((number) => (
+            <div key={number} className="pg">
+              <Button
+                onClick={() => paginate(number)}
+                href="#"
+                className="pag-link "
+              >
+                {number}
+              </Button>
+            </div>
+          ))}
+        </ul>
+      </nav>
     </>
   );
 };
@@ -42,7 +46,7 @@ function Repo() {
     const getRepo = async () => {
       setLoading(true);
       const response = await fetch(
-           `https://api.github.com/users/wonuola-y/repos`
+        `https://api.github.com/users/wonuola-y/repos`
       );
       const data = await response.json();
       setItems(data);
@@ -55,24 +59,22 @@ function Repo() {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = items.slice(indexOfFirstPost, indexOfLastPost);
 
-  const paginate = pageNumber => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-return(
-  <>
-  <div className='container mt-5'>
-  
- <div className="pages">
-  <Pagination items={currentPosts} loading={loading} />
-  <Pagining
-        postsPerPage={postsPerPage}
-        totalPosts={items.length}
-        paginate={paginate}
-      />
-
- </div>
-  </div>
-  </>
-)
+  return (
+    <>
+      <div className="container mt-5">
+        <div className="pages">
+          <Pagination items={currentPosts} loading={loading} />
+          <Pagining
+            postsPerPage={postsPerPage}
+            totalPosts={items.length}
+            paginate={paginate}
+          />
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Repo;
