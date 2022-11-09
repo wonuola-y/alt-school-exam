@@ -21,7 +21,7 @@ function Pagination() {
 <h1 className="notice1">Uh no! <br/> I had trobule building this section of the site</h1>
 
 <div className="notice">
-<p>Never the less please visit my github repo</p>
+<p>Nevertheless, please visit my github repo</p>
 
 <button><a href="https://github.com/wonuola-y">My repo</a></button>
 </div>
