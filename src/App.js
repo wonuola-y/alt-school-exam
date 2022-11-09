@@ -20,8 +20,11 @@ function ErrorFallback({ error }) {
       <p>Check this error message for more info</p>
       <SyntaxHighlighter language="javascript" style={github}>
         {error.message}
-        <Link to="/">Return home</Link>
+       
       </SyntaxHighlighter>
+      <p>or  <Link to="/" onClick={()=>{window.location.reload(true);}}>Return home</Link>
+    
+      </p>
     </div>
   );
 }
