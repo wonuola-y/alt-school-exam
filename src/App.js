@@ -4,6 +4,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { Link, Route, Routes } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { Helmet } from "react-helmet-async";
 
 import Error from "./components/Error";
 import Pagination from "./components/Pagination";
@@ -28,6 +29,10 @@ function Check() {
   return (
     <div className="main">
       {" "}
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Navbar tag" />
+      </Helmet>
       <h1> Welcome to My Github Portfolio</h1>
     </div>
   );
