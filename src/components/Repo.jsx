@@ -24,7 +24,7 @@ const Pagining = ({ postsPerPage, totalPosts, paginate }) => {
               <Button
                 onClick={() => paginate(number)}
                 href="#"
-                className="pag-link "
+                className="pag-link"
               >
                 {number}
               </Button>
