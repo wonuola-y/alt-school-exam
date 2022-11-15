@@ -1,7 +1,7 @@
 import React from "react";
 import "./Style.css";
 import { ErrorBoundary } from "react-error-boundary";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Helmet } from "react-helmet-async";
@@ -22,9 +22,6 @@ function ErrorFallback({ error }) {
         {error.message}
        
       </SyntaxHighlighter>
-      <p>or  <Link to="/" onClick={()=>{window.location.reload(true);}}>Return home</Link>
-    
-      </p>
     </div>
   );
 }
@@ -37,7 +34,7 @@ function Check() {
         <meta name="description" content="Navbar tag" />
       </Helmet>
       <div className="main">
-      <h1> Welcome to My Github Portfolio</h1>
+      <h1> Welcome <span className="details">to My Github Portfolio</span></h1>
 
 <div>
 <img src=" https://i.pinimg.com/564x/2a/13/a1/2a13a15206a4f561dfd7f7430b2d648f.jpg"alt="art" />

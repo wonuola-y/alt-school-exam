@@ -10,9 +10,9 @@ function Navbar() {
         <meta name="description" content="Navbar tag" />
       </Helmet>
       <div className="menu"> </div>
-      <h1>MY REPo</h1>
+      <h1 className="header">MY REPO</h1>
       <ul className="navs">
-      <li className="logo">MY REPO</li>
+      <li className="logo">MY REPOS</li>
 
         <NavLink className="link" to="/">
           Home

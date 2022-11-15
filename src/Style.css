@@ -37,8 +37,8 @@
   /* height: 473px; */
 }
 .main > div > img {
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   position: relative;
   z-index: 1;
 }
@@ -215,6 +215,9 @@ section {
 .logo {
   display: none;
 }
+.details{
+  display: none;
+}
 @media screen and (min-width: 700px) {
   .main-total > div {
     height: 70vh;
@@ -239,13 +242,22 @@ section {
     height: 473px;
   }
   .main > div > img {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 380px;
     position: relative;
     z-index: 1;
   }
+  hr{
+    margin:0 !important;
+  }
+  .header{
+    display: none;
+  }
   section {
     overflow: hidden;
+  }
+  .details{
+    display: block;
   }
   .pad {
     border-radius: 10px;
